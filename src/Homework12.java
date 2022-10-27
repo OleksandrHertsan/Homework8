@@ -5,13 +5,17 @@ public class Homework12 {
 
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
-        if (number % 2 == 0){
-            System.out.println(2);
-        }
-        else {
-            System.out.println(number);
-        }
+        int answer = 0;
 
+        for (int i = 2; i < number; i++) {
+            if (number % i == 0){
+                if (answer == 0){
+                    answer = i;
+                }
+            }
+
+        }
+        System.out.println(answer);
 
 
 
